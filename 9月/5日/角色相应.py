@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 # API的URL
-url = 'http://10.27.0.2:62000/expert/classify'
+url = 'http://36.213.14.38:8502/expert/classify'
 
 # 读取txt文件内容
 with open('juese.txt', 'r', encoding='utf-8') as file:
@@ -53,6 +53,6 @@ for line in lines:
 df = pd.DataFrame(data)
 
 # 将DataFrame导出到Excel文件
-df.to_excel('output.xlsx', index=False)
+df.to_excel('output1.xlsx', index=False)
 
 print("数据已保存到 output.xlsx 文件中")
